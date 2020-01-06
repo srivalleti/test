@@ -1,2 +1,95 @@
-hhhhhhhhhhhhh
-kkkkkkkkkkkkkk
+$body  (request):
+	<soapenv:Body  	xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+	<cm:CM-EligibilityValidationService  	xmlns:cm="http://ouaf.oracle.com/webservices/cm/CM-EligibilityValidationService">
+	<cm:initialOrChange>C</cm:initialOrChange>
+	<cm:policyId/>
+	<cm:effectiveDt>2020-01-01</cm:effectiveDt>
+	<cm:program>EXDL</cm:program>
+	<cm:plan>NVPS70</cm:plan>
+	<cm:subscriber>
+	<cm:policySwitch>Y</cm:policySwitch>
+	<cm:ssnId>234-56-6944</cm:ssnId>
+	<cm:exchangeMemberId>1000002252</cm:exchangeMemberId>
+	<cm:dateOfBirth>1954-01-01</cm:dateOfBirth>
+	<cm:lastName>Hopper</cm:lastName>
+	<cm:firstName>Jim</cm:firstName>
+	<cm:state>NV</cm:state>
+	</cm:subscriber>
+	<cm:dependentList>
+	<cm:dependents>
+	<cm:relationship>30</cm:relationship>
+	<cm:firstName>Will</cm:firstName>
+	<cm:lastName>Byers</cm:lastName>
+	<cm:dateOfBirth>2010-04-04</cm:dateOfBirth>
+	<cm:ssnId>476-88-3431</cm:ssnId>
+	<cm:exchangeMemberId>1000002255</cm:exchangeMemberId>
+	<cm:disabilityStatus>N</cm:disabilityStatus>
+	<cm:studentStatus>N</cm:studentStatus>
+	</cm:dependents>
+	</cm:dependentList>
+	</cm:CM-EligibilityValidationService>
+	</soapenv:Body>
+	
+
+
+<soapenv:Envelope xmlns="http://ouaf.oracle.com/webservices/cm/CM-EligibilityValidationService" 
+xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+   <soapenv:Body>
+      <CM-EligibilityValidationService>
+         <initialOrChange>C</initialOrChange>
+         <policyId>63393491294762</policyId>
+         <effectiveDt>2020-03-14</effectiveDt>
+         <subscriber>
+            <policySwitch>Y</policySwitch>
+         </subscriber>
+         <dependentList>
+            <dependents>
+               <actionFlg>A</actionFlg>
+               <relationship>30</relationship>
+               <firstName>Will</firstName>
+               <lastName>Byers</lastName>
+               <dateOfBirth>2010-04-04</dateOfBirth>
+               <ssnId>476-88-3431</ssnId>
+               <disabilityStatus>N</disabilityStatus>
+               <studentStatus>N</studentStatus>
+            </dependents>
+         </dependentList>
+      </CM-EligibilityValidationService>
+   </soapenv:Body>
+</soapenv:Envelope>
+
+
+
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:cm="http://ouaf.oracle.com/webservices/cm/CM-EligibilityValidationServiceDXP">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <cm:CM-EligibilityValidationService xmlns:cm="http://ouaf.oracle.com/webservices/cm/CM-EligibilityValidationService">
+         <cm:initialOrChange>I</cm:initialOrChange>
+         <cm:policyId>63393491294762</policyId>
+         <cm:effectiveDt>2019-01-01</cm:effectiveDt>
+         <cm:program>DPPG</cm:program>
+         <cm:plan>NTH00001</cm:plan>
+         <cm:subscriber>
+            <cm:policySwitch>Y</cm:policySwitch>
+            <cm:ssnId>121-36-3167</cm:ssnId>
+            <cm:exchangeMemberId>121363167</cm:exchangeMemberId>
+            <cm:dateOfBirth>1942-08-28</cm:dateOfBirth>
+            <cm:lastName>MUSSELMAN</cm:lastName>
+            <cm:firstName>MARGARET</cm:firstName>
+            <cm:state>TX</cm:state>
+         </cm:subscriber>
+         <cm:dependentList>
+            <cm:dependents>
+               <cm:relationship>20</cm:relationship>
+               <cm:firstName>DONALD</cm:firstName>
+               <cm:lastName>MUSSELMAN</cm:lastName>
+               <cm:dateOfBirth>1939-10-12</cm:dateOfBirth>
+               <cm:ssnId>569-50-7345</cm:ssnId>
+               <cm:exchangeMemberId>1213631672019391012MUSDONM</cm:exchangeMemberId>
+               <cm:disabilityStatus>N</cm:disabilityStatus>
+               <cm:studentStatus>N</cm:studentStatus>
+            </cm:dependents>
+         </cm:dependantList>
+      </cm:CM-EligibilityValidationService>
+   </soapenv:Body>
+</soapenv:Envelope>
